@@ -9,7 +9,7 @@ function Newpage() {
 }
 
 //date function
-var today = new Date(2020, 9, 12,0,0);
+var today = new Date();
 var oldDate = new Date(1997, 9, 12, 0, 0);
 var y = (today.getFullYear()+1 - oldDate.getFullYear())-1 ;
 var m = Math.abs( (today.getMonth()) - oldDate.getMonth()) ;
