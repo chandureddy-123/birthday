@@ -12,7 +12,7 @@ function Newpage() {
 var today = new Date();
 var oldDate = new Date(1997, 9, 12, 0, 0);
 var y = (today.getFullYear()+1 - oldDate.getFullYear())-1 ;
-var m = Math.abs( (today.getMonth()) - oldDate.getMonth()) ;
+var m = Math.abs( (today.getMonth()+1) - oldDate.getMonth()) ;
 var d = Math.abs(oldDate.getDate() - today.getDate());
 var h  = Math.abs((oldDate.getHours() - today.getHours())) ;
 var mi = Math.abs( (60 - oldDate.getMinutes() + today.getMinutes()) - 60 );
